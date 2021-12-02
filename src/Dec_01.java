@@ -20,7 +20,7 @@ public class Dec_01 {
 
     public List<Integer> readFile() {
         String readLine;
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/puzzleInput.txt"));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/puzzleInput01.txt"));) {
             while ((readLine = bufferedReader.readLine()) != null) {
                 countIncreases.add(Integer.parseInt(readLine));
             }
