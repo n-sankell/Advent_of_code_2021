@@ -21,7 +21,7 @@ public class Dec_02 {
 
     public void readFile() {
         String readLine;
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/puzzleInput02.txt"));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/Dec_02/puzzleInput02.txt"));) {
             while ((readLine = bufferedReader.readLine()) != null) {
                 fromFile.add(readLine);
             }
