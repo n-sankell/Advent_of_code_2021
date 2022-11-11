@@ -7,11 +7,11 @@ import java.util.List;
 
 public class Dec_03 {
 
-    private List<String> binaryInput = new ArrayList<>();
-    private List<String> oxygenRatings = new ArrayList<>();
-    private List<String> co2Ratings = new ArrayList<>();
-    private StringBuilder binaryGammaRate = new StringBuilder("");
-    private StringBuilder binaryEpsilonRate = new StringBuilder("");
+    private final List<String> binaryInput = new ArrayList<>();
+    private final List<String> oxygenRatings = new ArrayList<>();
+    private final List<String> co2Ratings = new ArrayList<>();
+    private final StringBuilder binaryGammaRate = new StringBuilder("");
+    private final StringBuilder binaryEpsilonRate = new StringBuilder("");
     private int decimalGammaRate = 0;
     private int decimalEpsilonRate = 0;
     private int decimalOxygenRating = 0;
@@ -37,7 +37,7 @@ public class Dec_03 {
 
     public void readFile() {
         String readLine;
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/Dec_03/puzzleInput03.txt"));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/Dec_03/puzzleInput03.txt"))) {
             while ((readLine = bufferedReader.readLine()) != null) {
                 binaryInput.add(readLine);
                 oxygenRatings.add(readLine);

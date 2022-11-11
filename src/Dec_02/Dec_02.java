@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Dec_02 {
 
-    List<String> fromFile = new ArrayList<>();
+    public final List<String> fromFile = new ArrayList<>();
 
     public static void main(String[] args) {
         new Dec_02();
@@ -21,7 +21,7 @@ public class Dec_02 {
 
     public void readFile() {
         String readLine;
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/Dec_02/puzzleInput02.txt"));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/Dec_02/puzzleInput02.txt"))) {
             while ((readLine = bufferedReader.readLine()) != null) {
                 fromFile.add(readLine);
             }
